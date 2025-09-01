@@ -16,6 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
             clone.querySelector(".review-comment").textContent = review.comment;
             clone.querySelector(".review-rating").textContent = "⭐".repeat(review.rating);
 
+            // Bouton supprimer
             clone.querySelector(".delete-btn").addEventListener("click", () => {
                 reviews.splice(index, 1);
                 renderReviews();
