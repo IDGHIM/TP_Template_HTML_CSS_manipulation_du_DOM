@@ -33,4 +33,4 @@ Le site est **100% front-end** (HTML, CSS, JavaScript) et inclut des manipulatio
 ## Installation / Utilisation
 1. Cloner le dépôt :  
 ```bash
-git clone <URL_DU_DEPOT>
+git clone <https://github.com/IDGHIM/TP_Template_HTML_CSS_manipulation_du_DOM>
