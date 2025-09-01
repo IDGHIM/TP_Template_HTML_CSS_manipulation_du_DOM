@@ -54,3 +54,10 @@ const questionsStrategie = [
     description: `KPIs pilotés par tableaux de bord : engagement, ventes, notoriété, part de voix.`,
   },
 ];
+
+// Constante qui contient toutes les questions pour le tri
+const questions = [
+  ...questionsCasques,
+  ...questionsDrones,
+  ...questionsStrategie,
+];
