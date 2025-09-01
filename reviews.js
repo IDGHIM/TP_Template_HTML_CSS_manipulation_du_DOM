@@ -1,13 +1,18 @@
+// Structure générale
 document.addEventListener("DOMContentLoaded", () => {
+
+    // Tableau des avis existants
     const reviews = [
         { author: "Alice", comment: "Super produit !", rating: 5 },
         { author: "Bob", comment: "Très utile.", rating: 4 }
     ];
 
+    // Récupération des éléments HTML
     const list = document.getElementById("reviews-list");
     const template = document.getElementById("review-template");
     const form = document.getElementById("review-form");
 
+    // Fonction pour afficher les avis
     function renderReviews() {
         list.innerHTML = "";
         reviews.forEach((review, index) => {
@@ -26,6 +31,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
+    // Gestion du formulaire
     form.addEventListener("submit", (e) => {
         e.preventDefault();
         const author = document.getElementById("author").value;
@@ -37,5 +43,5 @@ document.addEventListener("DOMContentLoaded", () => {
         form.reset();
     });
 
-    renderReviews();
+    renderReviews(); // affichage initial
 });
