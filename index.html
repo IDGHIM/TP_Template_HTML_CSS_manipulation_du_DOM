@@ -15,6 +15,7 @@
           <li><a href="#accueil">Accueil</a></li>
           <li><a href="#produit">Produit</a></li>
           <li><a href="#caracteristiques">Caractéristiques</a></li>
+          <li><a href="#configurateur">Configurateur</a></li>
           <li><a href="#prix">Prix</a></li>
           <li><a href="#FAQ">F.A.Q</a></li>
           <li><a href="#contact">Contact</a></li>
@@ -101,6 +102,143 @@
         </ul>
       </section>
 
+      <!-- NOUVEAU CONFIGURATEUR -->
+      <section id="configurateur">
+        <h2>Configurez Votre TechNova Pro</h2>
+        
+        <div class="configurator-container">
+          <div class="config-options">
+            <!-- Choix de couleur -->
+            <div class="option-group">
+              <h3>Couleur</h3>
+              <div class="color-selection">
+                <button class="color-option active" data-color="silver" data-price="0">
+                  Argent
+                </button>
+                <button class="color-option" data-color="black" data-price="0">
+                  Noir
+                </button>
+                <button class="color-option" data-color="blue" data-price="50">
+                  Bleu (+50€)
+                </button>
+                <button class="color-option" data-color="red" data-price="50">
+                  Rouge (+50€)
+                </button>
+                <button class="color-option" data-color="gold" data-price="100">
+                  Or (+100€)
+                </button>
+              </div>
+            </div>
+
+            <!-- Choix de capacité -->
+            <div class="option-group">
+              <h3>Capacité de Stockage</h3>
+              <div class="capacity-selection">
+                <button class="capacity-option active" data-capacity="512gb" data-price="0">
+                  512 GB SSD
+                </button>
+                <button class="capacity-option" data-capacity="1tb" data-price="200">
+                  1 TB SSD (+200€)
+                </button>
+                <button class="capacity-option" data-capacity="2tb" data-price="400">
+                  2 TB SSD (+400€)
+                </button>
+              </div>
+            </div>
+
+            <!-- Choix de version -->
+            <div class="option-group">
+              <h3>Version du Produit</h3>
+              <div class="version-selection">
+                <button class="version-option active" data-version="standard" data-price="499">
+                  Standard (499€)
+                </button>
+                <button class="version-option" data-version="pro" data-price="699">
+                  Pro (699€)
+                </button>
+                <button class="version-option" data-version="ultimate" data-price="899">
+                  Ultimate (899€)
+                </button>
+              </div>
+            </div>
+
+            <!-- Options supplémentaires -->
+            <div class="option-group">
+              <h3>Options Supplémentaires</h3>
+              <div class="extras-selection">
+                <label class="extra-option">
+                  <input type="checkbox" class="extra-checkbox" data-extra="garantie" data-price="99">
+                  <span>Garantie étendue 5 ans (+99€)</span>
+                </label>
+                
+                <label class="extra-option">
+                  <input type="checkbox" class="extra-checkbox" data-extra="support" data-price="149">
+                  <span>Support premium 24/7 (+149€)</span>
+                </label>
+                
+                <label class="extra-option">
+                  <input type="checkbox" class="extra-checkbox" data-extra="accessoires" data-price="79">
+                  <span>Pack d'accessoires (+79€)</span>
+                </label>
+                
+                <label class="extra-option">
+                  <input type="checkbox" class="extra-checkbox" data-extra="formation" data-price="199">
+                  <span>Formation personnalisée (+199€)</span>
+                </label>
+                
+                <label class="extra-option">
+                  <input type="checkbox" class="extra-checkbox" data-extra="livraison" data-price="29">
+                  <span>Livraison express 24h (+29€)</span>
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <!-- Résumé et prix -->
+          <div class="config-summary">
+            <h3>Votre Configuration</h3>
+            
+            <div class="summary-details">
+              <div class="summary-item">
+                <span>Version :</span>
+                <span id="selected-version">Standard</span>
+              </div>
+              
+              <div class="summary-item">
+                <span>Couleur :</span>
+                <span id="selected-color">Argent</span>
+              </div>
+              
+              <div class="summary-item">
+                <span>Stockage :</span>
+                <span id="selected-capacity">512 GB SSD</span>
+              </div>
+              
+              <div id="selected-extras"></div>
+            </div>
+
+            <div class="price-breakdown">
+              <div class="price-item">
+                <span>Prix de base :</span>
+                <span id="base-price">499€</span>
+              </div>
+              <div class="price-item" id="options-price-container" style="display: none;">
+                <span>Options :</span>
+                <span id="options-price">+0€</span>
+              </div>
+              <div class="total-price">
+                <span>Prix Total :</span>
+                <span id="total-price">499€</span>
+              </div>
+            </div>
+
+            <button id="add-to-cart" class="cta-button">
+              Ajouter au Panier
+            </button>
+          </div>
+        </div>
+      </section>
+
       <section id="temoignages">
         <h2>Ce Que Disent Nos Clients</h2>
         <blockquote>
@@ -130,7 +268,6 @@
         <h2>Espace Avis Clients</h2>
 
         <!-- Formulaire pour ajouter un avis -->
-
         <form id="review-form">
           <label for="author">Nom :</label>
           <input type="text" id="author" required />
@@ -160,8 +297,13 @@
             <p class="review-comment"></p>
             <p class="review-rating"></p>
             <button class="delete-btn">Supprimer</button>
+<<<<<<< HEAD
           </article>
         </template>
+=======
+        </article>
+    </template>
+>>>>>>> be3890481d6d498f66361e29c3cb6e63a896a79f
       </section>
 
       <section id="prix">
@@ -203,6 +345,7 @@
         </div>
       </section>
 
+<<<<<<< HEAD
       <section id="cta">
         <h2>Prêt à Rejoindre la Révolution ?</h2>
         <p>
@@ -246,21 +389,19 @@
         <h3>Stratégie 🚀</h3>
         <div id="strategie"></div>
       </section>
-    </main>
-
-    <footer id="contact">
-      <div>
-        <h3>TechNova</h3>
-        <p>L'innovation technologique à portée de main</p>
-      </div>
-      <div>
-        <h4>Contact</h4>
-        <p>Email: contact@technova.com</p>
-        <p>Téléphone: +33 1 23 45 67 89</p>
-        <p>Adresse: 123 Rue de l'Innovation, 75001 Paris</p>
-      </div>
+=======
+        <section id="cta">
+            <h2>Prêt à Rejoindre la Révolution ?</h2>
+            <p>Plus de 10 000 utilisateurs nous font déjà confiance. Rejoignez-les dès aujourd'hui !</p>
+            <form>
+                <input type="email" placeholder="Votre adresse email" required>
+                <button type="submit">Obtenir une Démo Gratuite</button>
+            </form>
+            <p><small>Livraison gratuite • Retour 30 jours • Paiement sécurisé</small></p>
+        </section>
 
         <form id="contactForm" novalidate>
+            <h2>Contactez-nous</h2>
             <div>
               <label for="name">Nom *</label><br>
               <input type="text" id="name" name="name">
@@ -281,6 +422,34 @@
       
             <button type="submit">Envoyer</button>
           </form>
+
+        <section id="faq">
+            <h2> F.A.Q - Agence Marketing Produit Tech </h2>
+            <p class="">Contenu 📘 </p>
+            <h3>Casques 🎧</h3>
+            <div id="casques">
+            </div>
+            <h3>Drones 🚁</h3>
+            <div id="drones">
+            </div>
+            <h3>Stratégie 🚀</h3>
+            <div id="strategie">
+            </div>
+        </section>
+>>>>>>> be3890481d6d498f66361e29c3cb6e63a896a79f
+    </main>
+
+    <footer id="contact">
+      <div>
+        <h3>TechNova</h3>
+        <p>L'innovation technologique à portée de main</p>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <p>Email: contact@technova.com</p>
+        <p>Téléphone: +33 1 23 45 67 89</p>
+        <p>Adresse: 123 Rue de l'Innovation, 75001 Paris</p>
+      </div>
 
       <div>
         <h4>Liens Utiles</h4>
@@ -304,10 +473,20 @@
       <p>&copy; 2025 TechNova. Tous droits réservés.</p>
     </footer>
 
+    <!-- Scripts -->
     <script type="module" src="./reviews.js"></script>
+<<<<<<< HEAD
 
+=======
+>>>>>>> be3890481d6d498f66361e29c3cb6e63a896a79f
     <script src="questions.js"></script>
-    <script src="./contact.js"></script>
+    <script src="contact.js"></script>
+    <script src="prix.js"></script>
     <script src="script.js"></script>
+<<<<<<< HEAD
   </body>
 </html>
+=======
+</body>
+</html>
+>>>>>>> be3890481d6d498f66361e29c3cb6e63a896a79f
