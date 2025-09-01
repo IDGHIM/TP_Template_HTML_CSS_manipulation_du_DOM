@@ -104,45 +104,60 @@
                 <cite>- Sophie Laurent, Consultante</cite>
             </blockquote>
         </section>
-
+        
         <section id="prix">
-            <h2>Offres de Lancement</h2>
-            <div>
-                <h3>Starter</h3>
-                <p><strong>299€</strong></p>
-                <ul>
-                    <li>TechNova Pro Base</li>
-                    <li>Garantie 1 an</li>
-                    <li>Support email</li>
-                </ul>
-                <button>Choisir Starter</button>
-            </div>
-            <div>
-                <h3>Pro</h3>
-                <p><strong>499€</strong> <small>(Populaire)</small></p>
-                <ul>
-                    <li>TechNova Pro Complet</li>
-                    <li>Accessoires premium</li>
-                    <li>Garantie 2 ans</li>
-                    <li>Support prioritaire</li>
-                    <li>Formation gratuite</li>
-                </ul>
-                <button>Choisir Pro</button>
-            </div>
-            <div>
-                <h3>Enterprise</h3>
-                <p><strong>799€</strong></p>
-                <ul>
-                    <li>TechNova Pro Ultimate</li>
-                    <li>Pack accessoires complet</li>
-                    <li>Garantie 3 ans</li>
-                    <li>Support dédié 24/7</li>
-                    <li>Formation personnalisée</li>
-                    <li>Maintenance incluse</li>
-                </ul>
-                <button>Choisir Enterprise</button>
-            </div>
-        </section>
+    <h2>Offres de Lancement</h2>
+    <p id="prix-total">Prix total : 0€</p>
+
+    <div id="offres">
+        <div class="offre" data-offre="Starter">
+            <h3>Starter</h3>
+            <p><strong>299€</strong></p>
+            <ul>
+                <li>TechNova Pro Base</li>
+                <li>Garantie 1 an</li>
+                <li>Support email</li>
+            </ul>
+            <button>Choisir Starter</button>
+        </div>
+
+        <div class="offre" data-offre="Pro">
+            <h3>Pro</h3>
+            <p><strong>499€</strong> <small>(Populaire)</small></p>
+            <ul>
+                <li>TechNova Pro Complet</li>
+                <li>Accessoires premium</li>
+                <li>Garantie 2 ans</li>
+                <li>Support prioritaire</li>
+                <li>Formation gratuite</li>
+            </ul>
+            <button>Choisir Pro</button>
+        </div>
+
+        <div class="offre" data-offre="Enterprise">
+            <h3>Enterprise</h3>
+            <p><strong>799€</strong></p>
+            <ul>
+                <li>TechNova Pro Ultimate</li>
+                <li>Pack accessoires complet</li>
+                <li>Garantie 3 ans</li>
+                <li>Support dédié 24/7</li>
+                <li>Formation personnalisée</li>
+                <li>Maintenance incluse</li>
+            </ul>
+            <button>Choisir Enterprise</button>
+        </div>
+    </div>
+
+    <h3>Options supplémentaires</h3>
+    <div class="option">
+        <label><input type="checkbox" value="99" class="option-sup"> Garantie étendue (+99€)</label>
+    </div>
+    <div class="option">
+        <label><input type="checkbox" value="49" class="option-sup"> Accessoires premium (+49€)</label>
+    </div>
+</section>
+
 
         <section id="cta">
             <h2>Prêt à Rejoindre la Révolution ?</h2>
@@ -187,5 +202,6 @@
         <hr>
         <p>&copy; 2025 TechNova. Tous droits réservés.</p>
     </footer>
+    <script src="prix.js"></script>
 </body>
 </html>
