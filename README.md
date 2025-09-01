@@ -34,3 +34,15 @@ Le site est **100% front-end** (HTML, CSS, JavaScript) et inclut des manipulatio
 1. Cloner le dépôt :  
 ```bash
 git clone https://github.com/IDGHIM/TP_Template_HTML_CSS_manipulation_du_DOM
+```
+2. Ouvrir le fichier index.html dans un navigateur moderne
+3. Profiter de la landing page interactive et tester les animations
+
+## 📫 Me contacter
+
+- GitHub: [@idghim](https://github.com/idghim) [@damiendiluca](https://github.com/damiendiluca) [@charlene631](https://github.com/charlene631) [@Daviid64](https://github.com/Daviid64) [@Joncamj](https://github.com/Joncamj) 
+- Mail : Ichem : ichemdghim@gmail.com Damien : X@gmail.com Charlène : X@gmail.com David : X@gmail.com Jon : X@gmail.com
+
+---
+
+⭐ *Si ce projet vous a plu ou vous a été utile, n'hésitez pas à lui laisser une étoile !*
