@@ -1,37 +1,39 @@
 <!DOCTYPE html>
 <html lang="fr">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
     <title>TechNova - L'Innovation à Portée de Main</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
-        <nav>
-            <h1>TechNova</h1>
-            <ul>
-                <li><a href="#accueil">Accueil</a></li>
-                <li><a href="#produit">Produit</a></li>
-                <li><a href="#caracteristiques">Caractéristiques</a></li>
-                <li><a href="#prix">Prix</a></li>
-                <li><a href="#FAQ">F.A.Q</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+      <nav>
+        <h1>TechNova</h1>
+        <ul>
+          <li><a href="#accueil">Accueil</a></li>
+          <li><a href="#produit">Produit</a></li>
+          <li><a href="#caracteristiques">Caractéristiques</a></li>
+          <li><a href="#prix">Prix</a></li>
+          <li><a href="#FAQ">F.A.Q</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
     </header>
 
     <main>
-        <section id="accueil">
-            <h1>Découvrez le Futur de la Technologie</h1>
-            <h2>TechNova Pro - L'Innovation à Portée de Main</h2>
-            <p>Révolutionnez votre quotidien avec notre dernière innovation technologique. TechNova Pro combine
-                performance, design et simplicité dans un seul appareil.</p>
-            <button>Découvrir Maintenant</button>
-            <button>Regarder la Vidéo</button>
-        </section>
+      <section id="accueil">
+        <h1>Découvrez le Futur de la Technologie</h1>
+        <h2>TechNova Pro - L'Innovation à Portée de Main</h2>
+        <p>
+          Révolutionnez votre quotidien avec notre dernière innovation
+          technologique. TechNova Pro combine performance, design et simplicité
+          dans un seul appareil.
+        </p>
+        <button>Découvrir Maintenant</button>
+        <button>Regarder la Vidéo</button>
+      </section>
 
       <section id="produit">
         <h2>Le Produit qui Change Tout</h2>
@@ -153,14 +155,13 @@
 
         <!-- Template réutilisable -->
         <template id="review-template">
-        <article class="review">
+          <article class="review">
             <h3 class="review-author"></h3>
             <p class="review-comment"></p>
             <p class="review-rating"></p>
             <button class="delete-btn">Supprimer</button>
-        </article>
-    </template>
-
+          </article>
+        </template>
       </section>
 
       <section id="prix">
@@ -218,29 +219,33 @@
           >
         </p>
       </section>
-        <section id="cta">
-            <h2>Prêt à Rejoindre la Révolution ?</h2>
-            <p>Plus de 10 000 utilisateurs nous font déjà confiance. Rejoignez-les dès aujourd'hui !</p>
-            <form>
-                <input type="email" placeholder="Votre adresse email" required>
-                <button type="submit">Obtenir une Démo Gratuite</button>
-            </form>
-            <p><small>Livraison gratuite • Retour 30 jours • Paiement sécurisé</small></p>
-        </section>
+      <section id="cta">
+        <h2>Prêt à Rejoindre la Révolution ?</h2>
+        <p>
+          Plus de 10 000 utilisateurs nous font déjà confiance. Rejoignez-les
+          dès aujourd'hui !
+        </p>
+        <form>
+          <input type="email" placeholder="Votre adresse email" required />
+          <button type="submit">Obtenir une Démo Gratuite</button>
+        </form>
+        <p>
+          <small
+            >Livraison gratuite • Retour 30 jours • Paiement sécurisé</small
+          >
+        </p>
+      </section>
 
-        <section id="faq">
-            <h2> F.A.Q - Agence Marketing Produit Tech </h2>
-            <p class="">Contenu 📘 </p>
-            <h3>Casques 🎧</h3>
-            <div id="casques">
-            </div>
-            <h3>Drones 🚁</h3>
-            <div id="drones">
-            </div>
-            <h3>Stratégie 🚀</h3>
-            <div id="strategie">
-            </div>
-        </section>
+      <section id="faq">
+        <h2>F.A.Q - Agence Marketing Produit Tech</h2>
+        <p class="">Contenu 📘</p>
+        <h3>Casques 🎧</h3>
+        <div id="casques"></div>
+        <h3>Drones 🚁</h3>
+        <div id="drones"></div>
+        <h3>Stratégie 🚀</h3>
+        <div id="strategie"></div>
+      </section>
     </main>
 
     <footer id="contact">
@@ -301,11 +306,8 @@
 
     <script type="module" src="./reviews.js"></script>
 
-  </body>
-</html>
     <script src="questions.js"></script>
     <script src="./contact.js"></script>
     <script src="script.js"></script>
-</body>
-
+  </body>
 </html>
